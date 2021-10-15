@@ -1,0 +1,47 @@
+@import '../../base';
+
+.vjs-my-video-player.video-js {
+    color: white;
+}
+
+.vjs-my-video-player .vjs-big-play-button {
+    position: absolute;
+    box-sizing: border-box;
+    background: #000;
+    border-radius: 50%;
+    background: linear-gradient(220deg, rgba(204, 51, 99, 0.6), rgba(148, 72, 188, 0.6));
+    border: transparent;
+    width: 1.5em;
+    height: 1.5em;
+    top: 50%;
+    right: 50%;
+    
+
+    & .vjs-icon-placeholder::before {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.vjs-my-video-player .vjs-play-progress,
+.vjs-my-video-player .vjs-volume-level {
+    background: linear-gradient(220deg, rgb(204, 51, 99), rgb(148, 72, 188));
+}
+
+
+.vjs-my-video-player .vjs-slider-bar,
+.vjs-my-video-player .vjs-play-control {
+    color: white;
+}
+
+.video-js:hover .vjs-big-play-button,
+.video-js .vjs-big-play-button:focus {
+    background-color: rgba(0, 0, 0, 0.781);
+}
+
+@media only screen and (min-width: 900px) {
+    .vjs-my-video-player.video-js {
+        font-size: 1.25em;
+    }
+}

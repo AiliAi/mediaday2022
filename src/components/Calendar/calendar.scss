@@ -1,0 +1,57 @@
+@import '../../base';
+
+
+
+.my-event {
+    margin-bottom: 0.25em;
+    padding-left: 1em;  
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.my-event-title {
+    font-size: 1em;
+}
+
+.my-event-time, .my-event-speaker {
+    font-size: 0.75em;
+}
+
+
+.fc .fc-timegrid-now-indicator-container {
+    background-color: white;
+}
+
+
+
+
+
+@media only screen and (min-width: 360px) { 
+    .my-event {
+        padding-left: 2em;
+        padding-top: 0.25em;   
+    }
+
+    .my-event-time, .my-event-speaker {
+        font-size: 1.125em;
+    }
+
+    .my-event-title {
+        font-size: 1.125em;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) { 
+    
+
+    .my-event-time, .my-event-speaker {
+        font-size: 1.25em;
+    }
+
+    .my-event-title {
+        font-size: 1.75em;
+    }
+  }
+
+
+
+

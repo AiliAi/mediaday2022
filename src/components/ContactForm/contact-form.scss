@@ -1,0 +1,48 @@
+@import "../../base";
+
+.my-contact-form {
+   width: 90vh;
+}
+
+.my-heading {
+    color: $myPurpleColor;
+}
+
+.btn-purple-form {
+    @include my-shadow;
+    background-color: $myButtoncolor;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: calc(5px + 2vmin);
+}
+
+.btn-purple-form:hover {
+    color: white;
+    background-color: #6aa0fc;
+  }
+
+label {
+    font-weight: 700;
+}
+
+Form {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.main-heading-style {
+    color: $myPurpleColor;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    font-size: calc(1em + 2vw);
+  }
+
+
+.my-toast-base {
+    background-color: $myInfoColor;
+    font-family: 'Nunito Sans', sans-serif;
+    color: black;
+}
+
+.my-toast-border {
+    border-bottom: 2px solid $myPurpleColor;
+}

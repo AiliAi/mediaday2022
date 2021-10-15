@@ -1,0 +1,127 @@
+@import "./base";
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Lora:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Nunito+Sans:wght@300;400;700&display=swap");
+
+.main-video-title-container {
+  @include text-bg;
+}
+
+.massive-margin {
+  margin-top: 5em;
+}
+
+.main-heading-style {
+  color: $myPurpleColor;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 700;
+  font-size: calc(1em + 2vw);
+}
+
+.heading-style {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: $myPurpleColor;
+  letter-spacing: 1px;
+  font-size: calc(1em + 2vw);
+  font-weight: 700;
+}
+
+.text-style {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.1em;
+}
+
+.subheading-style {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: black;
+  letter-spacing: 1px;
+  font-size: 1.6em;
+  font-weight: 700;
+}
+
+.custom-badge-container {
+  background: $gradientColor;
+  width: 12vmin;
+  display: none;
+}
+
+.custom-badge {
+  font-family: "Open Sans Condensed", sans-serif;
+  background-color: #f3f3fb;
+  font-weight: bold;
+  color: black;
+  width: 100%;
+  display: none;
+}
+
+.custom-badge > svg {
+  display: none;
+}
+
+.navbar {
+  background-color: white;
+}
+
+.me-auto.navbar-nav {
+  font-family: "Nunito", sans-serif;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+
+  &:hover {
+    color: rgb(95, 93, 93);
+  }
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: rgb(204, 51, 99);
+}
+
+.dropdown-menu {
+  border: none;
+}
+
+.event-dropdown {
+  font-family: "Nunito", sans-serif;
+  color: black;
+  font-size: 1em;
+
+  &:hover {
+    background-color: $myLinkHoverColor;
+    color: white;
+  }
+}
+
+a.nav-link.event-dropdown-active {
+  color: rgb(204, 51, 99);
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(204,51,99, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: $myButtoncolor;
+  outline: none;
+}
+
+@media only screen and (min-width: 568px) {
+
+  .dropdown-menu {
+    border: 1px solid lightgrey;
+    min-width: 450px;
+  }
+
+  .custom-badge-container,
+  .custom-badge {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .custom-badge > svg {
+    display: inline-block;
+  }
+}

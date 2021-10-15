@@ -1,0 +1,35 @@
+@import "../../base";
+
+.flex-container {
+    width: 100%;
+    display: flex;
+}
+
+.space {
+    @include text-bg;
+    @include my-shadow;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: calc(0.5em + 2vmin);
+    text-align: center;
+    color: $myButtoncolor;
+}
+
+.font-weight {
+    font-weight: 700;
+    font-size: calc(1em + 2vmin);
+}
+
+.empty-space {
+    margin-top: 12.5vh;
+}
+
+.margin-top {
+    margin-top: -0.5em;
+}
+
+@media (max-width: 500px) {
+    .empty-space {
+        margin-top: 10vh;
+    }
+}

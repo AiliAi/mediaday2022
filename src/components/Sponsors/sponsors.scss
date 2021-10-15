@@ -1,0 +1,64 @@
+@import "../../base";
+
+@mixin logo-boxes {
+    @include my-shadow;
+    padding: 1vh;
+    height: 10vh;
+    max-height: 5em;
+    width: auto;
+  }
+
+.white {
+    @include logo-boxes;
+    background-color: white; 
+}
+
+.black {
+    @include logo-boxes;
+    background-color: black; 
+}
+
+.sponsor-heading {
+    margin: 0.7em 1em;
+    margin-top: 2.5em;
+    color: $myPurpleColor;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    font-size: calc(1em + 2vw);
+}
+
+.correct-size {
+    display: flex;
+    justify-content: space-around;
+    height: 12vh;
+    max-height: 7em;
+    width: auto;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+@media (max-width: 575.98px) {
+    .sponsor-heading {
+        text-align: center;
+        margin: 1em 0;
+        margin-top: 3em;
+    }
+}
+
+@media (max-width: 280px) {
+    .sponsor-heading {
+        font-size: calc(0.7em + 2vw);
+    }
+
+    .white {
+        height: 8vh;
+    }
+    
+    .black {
+        height: 8vh;
+    }
+
+    .correct-size {
+        height: 10vh;
+    }
+}

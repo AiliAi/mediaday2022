@@ -1,0 +1,44 @@
+
+@import '../base';
+
+body {
+    background-color: $bg-color;
+}
+
+.gradient-border {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    background: $gradientColor;
+    border-radius: 50%;
+  }
+  
+.speaker-img {
+    object-fit: cover;
+    object-position: center;
+}
+
+.event-info {
+    text-align: left;
+}
+
+.blue-overlay {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: $myInfoColor;
+    color: black;
+    border: none;
+    font-size: calc(12px + 1vmin);
+    
+  }
+
+  @media only screen and (min-width: 568px) {
+    .gradient-border {
+        height: 200px;
+        width: 200px;
+      
+      }
+   
+  }
